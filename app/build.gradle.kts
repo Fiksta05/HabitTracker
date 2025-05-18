@@ -56,4 +56,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+val apiKey: String by project
+
+buildConfigField("String", "API_KEY", "\"${apiKey}\"")
+
+
+
+
+
+
+
 }
